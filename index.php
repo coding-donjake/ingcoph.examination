@@ -27,8 +27,8 @@ $_SESSION['id'] = '';
     <h1 class="text-center">Post Anything</h1>
     <h3 class="text-center">Log In</h3>
     <div class="form-group">
-      <label for="username">Username</label>
-      <input type="text" class="form-control" id="username">
+      <label for="username">Email</label>
+      <input type="email" class="form-control" id="username">
     </div>
     <div class="form-group">
       <label for="password">Password</label>
@@ -42,8 +42,8 @@ $_SESSION['id'] = '';
   <form id="register">
     <h3 class="text-center">Register</h3>
     <div class="form-group">
-      <label for="reg_username">Username</label>
-      <input type="text" class="form-control" id="reg_username">
+      <label for="reg_username">Email</label>
+      <input type="email" class="form-control" id="reg_username">
     </div>
     <div class="form-group">
       <label for="reg_password">Password</label>

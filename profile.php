@@ -46,7 +46,7 @@ $conn->close();
   <form id="register">
     <h3 class="text-center">Update Profile</h3>
     <div class="form-group">
-      <label for="username">Username</label>
+      <label for="username">Email</label>
       <input type="text" class="form-control" id="username" value="<?php echo $user['username'] ?>" readonly>
     </div>
     <div class="form-group">
