@@ -94,13 +94,15 @@ $_SESSION['id'] = '';
       formdata.append('username', document.querySelector('#reg_username').value);
       formdata.append('password', document.querySelector('#reg_password').value);
       formdata.append('full_name', document.querySelector('#reg_full_name').value);
+      const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+
       if (!document.querySelector('#reg_username').value) {
-        window.alert('Username is blank.');
+        window.alert('Email is blank.');
         button.innerHTML = btnText;
         return;
       }
-      if (document.querySelector('#reg_username').value.length < 4) {
-        window.alert('Username must be atleast 4 characters.');
+      if (!emailRegex.test(document.querySelector('#reg_username').value)) {
+        window.alert('Invalid email format.');
         button.innerHTML = btnText;
         return;
       }
